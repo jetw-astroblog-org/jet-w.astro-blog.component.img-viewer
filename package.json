@@ -1,0 +1,46 @@
+{
+  "name": "@jet-w/astro-blog.component.img-viewer",
+  "version": "0.1.0",
+  "description": "Reusable image viewer Vue component for @jet-w/astro-blog",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./components/*": "./src/components/*"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "playground": "npm run build && cd playground && npm run dev",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "astro",
+    "vue",
+    "image-viewer",
+    "component"
+  ],
+  "author": "Haiyue",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jet-w/jet-w.astro-blog.component.img-viewer.git"
+  },
+  "homepage": "https://github.com/jet-w/jet-w.astro-blog.component.img-viewer#readme",
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0"
+  }
+}

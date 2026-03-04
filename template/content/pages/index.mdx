@@ -1,0 +1,55 @@
+---
+title: 首页
+description: 1基于Astro构建的现代化技术博客，专注于分享前端开发、技术思考和学习笔记。
+---
+
+import ImageViewer from '@jet-w/astro-blog.component.img-viewer/components/ImageViewer.vue';
+export const images = [
+  {
+    "src": 'https://picsum.photos/seed/graph1/800/500',
+    "title": 'Population Growth Chart',
+    "categories": ['graph'],
+    "description": 'This graph shows the <span class="hi">steady increase</span> in population over the past decade, with a notable acceleration between 2018 and 2022.',
+  },
+  {
+    src: 'https://picsum.photos/seed/graph2/800/500',
+    title: 'Revenue by Quarter',
+    categories: ['graph'],
+    description: 'Quarterly revenue data indicates <span class="hi">Q3</span> consistently outperforms other quarters.',
+  },
+  {
+    src: 'https://picsum.photos/seed/flow1/800/500',
+    title: 'Software Development Lifecycle',
+    categories: ['flowchart'],
+    description: 'The flowchart illustrates the <span class="hi">iterative process</span> from requirements gathering through deployment.',
+  },
+  {
+    src: 'https://picsum.photos/seed/flow2/800/500',
+    title: 'Decision Tree Analysis',
+    categories: ['flowchart'],
+  },
+  {
+    src: 'https://picsum.photos/seed/map1/800/500',
+    title: 'Global Distribution Network',
+    categories: ['map'],
+    description: 'The map highlights key distribution hubs across <span class="hi">three continents</span>.',
+  },
+  {
+    src: 'https://picsum.photos/seed/map2/800/500',
+    title: 'Climate Zones Overview',
+    categories: ['map'],
+  },
+  {
+    src: 'https://picsum.photos/seed/img1/800/500',
+    title: 'Laboratory Equipment Setup',
+    categories: ['image'],
+    description: 'The image shows a standard lab configuration with <span class="hi">safety equipment</span> properly positioned.',
+  },
+  {
+    src: 'https://picsum.photos/seed/img2/800/500',
+    title: 'Architectural Blueprint',
+    categories: ['image'],
+  },
+];
+
+<ImageViewer client:load images={images} />
